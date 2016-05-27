@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -lt 2 ] ;
+if [ $# -lt 3 ] ;
 then
         echo usage : $0 protocols $2
         exit 1
