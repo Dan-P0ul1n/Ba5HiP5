@@ -3,6 +3,7 @@ if [ $# -lt 2 ] ; then
 	echo " usage: $0 <protocols> <nmap_results>"
 	exit 1
 fi
+cp NMAP_all_hosts.txt nmap.orig.txt
 cat $2 | grep -v "exact\|MAC\|OS\|hop\|Running\|Device\|fingerprint\|shown\| \
 latency\|Warning\|done\|LABS\|org" > A
 sleep 1
